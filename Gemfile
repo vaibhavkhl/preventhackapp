@@ -8,9 +8,10 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
-#for heroku
-gem 'pg'
 
+gem 'sqlite3', :group => :development
+
+gem 'pg', :group => :production
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
