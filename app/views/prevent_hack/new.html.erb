@@ -1,0 +1,6 @@
+<h3>Upload log file</h3>
+
+<%= form_tag("/prevent_hack", multipart: true) do %>
+<%= file_field_tag 'file' %>
+<%= submit_tag("submit") %>
+<% end %>

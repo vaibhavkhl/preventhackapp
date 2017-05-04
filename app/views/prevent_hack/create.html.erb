@@ -1,0 +1,24 @@
+<div>
+  <h1>Result</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Is Hack?</th>
+        <th>Uploaded log</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @log_obj_array.each do |log| %>
+      <tr>
+        <th><%= log["is_hack"]%></th>
+        <th><%= log["log"]%></th>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
+
+<div>
+  <h3><%= link_to 'Back', new_prevent_hack_path %></h3>
+</div>
